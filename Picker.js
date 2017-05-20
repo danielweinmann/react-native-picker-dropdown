@@ -1,42 +1,60 @@
 import React, { Component } from 'react'
-import ReactNative, { Platform, TouchableOpacity, Text, StyleSheet } from 'react-native'
-
-class PickerItem extends Component {
-  render() {
-    return(
-      <Text>Item</Text>
-    )
-  }
-}
+import ReactNative, { Platform, TouchableOpacity, Text, StyleSheet, ActionSheetIOS } from 'react-native'
 
 export default class Picker extends Component {
-  static Item = PickerItem
+  static Item = ReactNative.Picker.Item
+
+  handlePress() {
+    const { children, onValueChange } = this.props
+    const labels = children.map(child => child.props.label)
+    const values = children.map(child => child.props.value)
+    ActionSheetIOS.showActionSheetWithOptions(
+      {
+        options: [...labels, "Cancel"],
+        cancelButtonIndex: labels.length,
+      },
+      (index) => {
+        if (index < labels.length) {
+          onValueChange(values[index])
+        }
+      }
+    )
+  }
 
   render() {
+    const { children, style } = this.props
+    const labels = children.map(child => child.props.label)
+    const values = children.map(child => child.props.value)
+    const flatStyle = (style ? StyleSheet.flatten(style) : {})
+
     if (Platform.OS === 'ios') {
-      const { style, selectedValue } = this.props
-      const flatStyle = StyleSheet.flatten(style)
+      const { selectedValue } = this.props
+      const flatStyle = (style ? StyleSheet.flatten(style) : {})
       const textStyle = {
         fontSize: 12,
-        lineHeight: (style && flatStyle.height ? flatStyle.height : 12),
+        lineHeight: (flatStyle.height ? flatStyle.height : 12),
       }
       return(
-        <TouchableOpacity style={{
-          alignSelf: 'stretch',
-          alignItems: 'center',
-          justifyContent: 'center',
-          flexDirection: 'row',
-          paddingHorizontal: 6,
-        }}>
+        <TouchableOpacity
+          onPress={::this.handlePress}
+          style={{
+            alignSelf: 'stretch',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexDirection: 'row',
+            paddingHorizontal: 6,
+          }}
+        >
           <Text style={[{
             flex: 1,
           }, textStyle, style]}>
-            {selectedValue}
+            {labels[values.indexOf(selectedValue)]}
           </Text>
           <Text style={[textStyle, style, {color: 'black'}]}>▼</Text>
         </TouchableOpacity>
       )
     } else {
+
       return(<ReactNative.Picker {...this.props} />)
     }
   }
