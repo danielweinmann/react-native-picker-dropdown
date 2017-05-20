@@ -5,7 +5,7 @@ A dropdown that uses React Native's Picker for Android and ActionSheetIOS for iO
 
 ```yarn add react-native-picker-dropdown```
 
-Or
+or
 
 ```npm install react-native-picker-dropdown --save```
 
@@ -39,7 +39,7 @@ export default class App extends Component {
         }}>
           <Picker
             selectedValue={this.state.language}
-            onValueChange={(lang) => this.setState({language: lang})}
+            onValueChange={(language) => this.setState({language})}
             mode="modal"
             style={{
               alignSelf: 'stretch',
