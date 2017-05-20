@@ -1,0 +1,19 @@
+{
+  "name": "react-native-picker-dropdown",
+  "version": "0.0.1",
+  "description": "A dropdown that uses React Native's Picker for Android and ActionSheetIOS for iOS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielweinmann/react-native-picker-dropdown.git"
+  },
+  "author": "Daniel Weinmann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielweinmann/react-native-picker-dropdown/issues"
+  },
+  "homepage": "https://github.com/danielweinmann/react-native-picker-dropdown#readme"
+}
