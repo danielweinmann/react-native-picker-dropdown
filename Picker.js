@@ -36,7 +36,7 @@ export default class Picker extends Component {
       }
       return(
         <TouchableOpacity
-          onPress={::this.handlePress}
+          onPress={() => this.handlePress()}
           style={{
             alignSelf: 'stretch',
             alignItems: 'center',
