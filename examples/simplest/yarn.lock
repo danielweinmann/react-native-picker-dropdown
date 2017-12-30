@@ -2899,9 +2899,9 @@ react-native-maps@0.17.1:
   version "0.17.1"
   resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.17.1.tgz#ab2236341fd984dac8864202ae55331bc262f60c"
 
-react-native-picker-dropdown@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/react-native-picker-dropdown/-/react-native-picker-dropdown-0.0.2.tgz#cd68aee021aca2a750d6d6cb09f876c7cfd0d599"
+react-native-picker-dropdown@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-picker-dropdown/-/react-native-picker-dropdown-0.1.1.tgz#f1154c65e9280ef9bded11b5fc9caaff32a14f82"
 
 react-native-safe-module@^1.1.0:
   version "1.2.0"

@@ -20,7 +20,7 @@ export default class App extends Component {
           selectedValue={this.state.language}
           onValueChange={this.onValueChange}
           mode="dialog"
-          style={styles.picker}
+          textStyle={styles.pickerText}
         >
           <Picker.Item label="JavaScript" value="js" />
           <Picker.Item label="Ruby" value="ruby" />
@@ -39,8 +39,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  picker: {
-    alignSelf: 'stretch',
+  pickerText: {
     color: 'black',
   }
 })
