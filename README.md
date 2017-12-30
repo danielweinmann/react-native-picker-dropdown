@@ -17,7 +17,7 @@ The only exception is that we have 2 style props:
 
 1. `textStyle`: used to customize the text and the arrow icon of the Picker. On Android, the arrow icon does not change and other styles are also not applied due to limitations on React Native's `Picker` component.
 
-2. `style`: used to customize a view that we put around the picker. 
+2. `style`: used to customize a view that we put around the picker.
 
 ## Examples
 
@@ -26,6 +26,12 @@ The only exception is that we have 2 style props:
 [Run this example on Expo](https://exp.host/@danielweinmann/react-native-picker-dropdown-simplest)
 
 [Read the source code](examples/simplest/App.js)
+
+### Styled example
+
+[Run this example on Expo](https://exp.host/@danielweinmann/react-native-picker-dropdown-styled)
+
+[Read the source code](examples/styled/App.js)
 
 ## Contributing
 
