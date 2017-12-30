@@ -9,54 +9,17 @@ or
 
 ```npm install react-native-picker-dropdown --save```
 
-## Example
+## Usage
 
 It uses the exact same API as [React Native's Picker](https://facebook.github.io/react-native/docs/picker.html), but it shows a dropdown for iOS that opens an ActionSheetIOS with the items when clicked.
 
-```js
-import React, { Component } from 'react'
-import { View } from 'react-native'
-import { Picker } from 'react-native-picker-dropdown'
+## Examples
 
-export default class App extends Component {
-  constructor(props, context) {
-    super(props, context)
-    this.state = { language: "js"  }
-  }
+### Simplest
 
-  render() {
-    return (
-      <View style={{
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: 'gray',
-      }}>
-        <View style={{
-          backgroundColor: 'white',
-          alignSelf: 'stretch',
-          margin: 20,
-        }}>
-          <Picker
-            selectedValue={this.state.language}
-            onValueChange={(language) => this.setState({language})}
-            mode="modal"
-            style={{
-              alignSelf: 'stretch',
-              color: 'black',
-            }}
-          >
-            <Picker.Item label="JavaScript" value="js" />
-            <Picker.Item label="Ruby" value="ruby" />
-            <Picker.Item label="Python" value="python" />
-            <Picker.Item label="Elm" value="elm" />
-          </Picker>
-        </View>
-      </View>
-    )
-  }
-}
-```
+[Run this example on Expo](https://exp.host/@danielweinmann/react-native-picker-dropdown-simplest)
+
+[Read the source code](examples/simples/App.js)
 
 ## Contributing
 
