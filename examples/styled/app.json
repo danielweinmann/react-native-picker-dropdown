@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "react-native-picker-dropdown styled example",
+    "description": "A styled example of react-native-picker-dropdown usage",
+    "slug": "react-native-picker-dropdown-simplest",
+    "privacy": "public",
+    "sdkVersion": "24.0.0",
+    "platforms": ["ios", "android"],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    }
+  }
+}
