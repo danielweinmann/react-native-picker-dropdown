@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "simplest",
-    "description": "This project is really great.",
+    "name": "react-native-picker-dropdown simplest example",
+    "description": "The simplest possible example of react-native-picker-dropdown usage",
     "slug": "react-native-picker-dropdown-simplest",
     "privacy": "public",
     "sdkVersion": "24.0.0",

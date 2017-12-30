@@ -15,11 +15,11 @@ It uses the exact same API as [React Native's Picker](https://facebook.github.io
 
 ## Examples
 
-### Simplest
+### Simplest example
 
 [Run this example on Expo](https://exp.host/@danielweinmann/react-native-picker-dropdown-simplest)
 
-[Read the source code](examples/simples/App.js)
+[Read the source code](examples/simplest/App.js)
 
 ## Contributing
 
