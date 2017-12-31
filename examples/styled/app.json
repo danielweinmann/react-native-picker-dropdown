@@ -2,7 +2,7 @@
   "expo": {
     "name": "react-native-picker-dropdown styled example",
     "description": "A styled example of react-native-picker-dropdown usage",
-    "slug": "react-native-picker-dropdown-simplest",
+    "slug": "react-native-picker-dropdown-styled",
     "privacy": "public",
     "sdkVersion": "24.0.0",
     "platforms": ["ios", "android"],
