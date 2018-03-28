@@ -56,6 +56,8 @@ export default class Picker extends Component {
         >
           <Text
             style={[{ flex: 1 }, defaultTextStyle, textStyle]}
+            ellipsizeMode="tail"
+            numberOfLines={1}
           >
             {labels[values.indexOf(selectedValue)]}
           </Text>
