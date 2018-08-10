@@ -13,8 +13,8 @@ export default class Picker extends Component {
 
   handlePress() {
     const { children, onValueChange, prompt } = this.props
-    const labels = children.map(child => child.props.label)
-    const values = children.map(child => child.props.value)
+    const labels = React.Children.map(children, (child) => child.props.label)
+    const values = React.Children.map(children, (child) => child.props.value)
     ActionSheetIOS.showActionSheetWithOptions(
       {
         title: prompt,
@@ -31,8 +31,8 @@ export default class Picker extends Component {
 
   render() {
     const { children, style, textStyle } = this.props
-    const labels = children.map(child => child.props.label)
-    const values = children.map(child => child.props.value)
+    const labels = React.Children.map(children, (child) => child.props.label)
+    const values = React.Children.map(children, (child) => child.props.value)
     const flatStyle = (style ? StyleSheet.flatten(style) : {})
 
     if (Platform.OS === 'ios') {
