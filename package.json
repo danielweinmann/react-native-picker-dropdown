@@ -1,6 +1,6 @@
 {
   "name": "react-native-picker-dropdown",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A dropdown that uses React Native's Picker for Android and ActionSheetIOS for iOS",
   "main": "index.js",
   "scripts": {
