@@ -30,7 +30,7 @@ export default class Picker extends Component {
   }
 
   render() {
-    const { children, style, textStyle } = this.props
+    const { children, style, textStyle, testID } = this.props
     const labels = React.Children.map(children, (child) => child.props.label)
     const values = React.Children.map(children, (child) => child.props.value)
     const flatStyle = (style ? StyleSheet.flatten(style) : {})
@@ -53,6 +53,7 @@ export default class Picker extends Component {
             flexDirection: 'row',
             paddingHorizontal: 6,
           }, flatStyle]}
+          testID={testID ? testID : null}
         >
           <Text
             style={[{ flex: 1 }, defaultTextStyle, textStyle]}
