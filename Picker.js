@@ -23,7 +23,7 @@ export default class Picker extends Component {
       },
       index => {
         if (index < labels.length) {
-          onValueChange(values[index])
+          onValueChange(values[index],index)
         }
       }
     )
